@@ -1,7 +1,10 @@
 var Continuar = `S`
+// Declarando uma variável e atribuindo a ela o valor `S`
 
 while (Continuar == `S`) {
+    // Cria um laço. Que se Continuar for igual á letra "S" ele executa infinitamente
     alert(`Seja bem vindo ao site de venda de Cursos Da Dnc`)
+    // Exibi um alerta
     var Verificador = true
     while (Verificador == true) {
         var CursoNaDnc = prompt(`Escolha quais cursos o senhor deseja comprar
@@ -11,16 +14,19 @@ while (Continuar == `S`) {
         4. Formação Em Produto = R$ 18.000,00 
         5. Formação Em Tecnologia = R$ 19.000,00`, `exemplo: "32514"
         `)
-        if(isNaN(CursoNaDnc) || CursoNaDnc.length > 5 || CursoNaDnc.length < 1 
-        || CursoNaDnc[0] > 5 || CursoNaDnc[0] < 1
-        || CursoNaDnc[1] > 5 || CursoNaDnc[1] < 1
-        || CursoNaDnc[2] > 5 || CursoNaDnc[2] < 1
-        || CursoNaDnc[3] > 5 || CursoNaDnc[3] < 1
-        || CursoNaDnc[4] > 5 || CursoNaDnc[4] < 1) {
+        // Exibi uma painel com os cursos disponíveis e pede para que o cliente escolha quais cursos ele deseja comprar
+        if(isNaN(CursoNaDnc) || CursoNaDnc.length > 5 || CursoNaDnc.length < 1
+        // Se CursoNaDnc não for um número ou o tamanho da de CursoNaDnc for maior do que 5 ou menor do que 1 ou
+        || CursoNaDnc[0] > 5 || CursoNaDnc[0] < 1 // se o primeiro digito de CursoNaDnc for maior do que 5 ou menor do que 1 ou
+        || CursoNaDnc[1] > 5 || CursoNaDnc[1] < 1 // se o segundo digito de CursoNaDnc for maior do que 5 ou menor do que 1 ou
+        || CursoNaDnc[2] > 5 || CursoNaDnc[2] < 1 // se o terceiro digito de CursoNaDnc for maior do que 5 ou menor do que 1 ou
+        || CursoNaDnc[3] > 5 || CursoNaDnc[3] < 1 // se o quarto digito de CursoNaDnc for maior do que 5 ou menor do que 1 ou
+        || CursoNaDnc[4] > 5 || CursoNaDnc[4] < 1) { // se o quinto digito de CursoNaDnc for maior do que 5 ou menor do que 1 ele executa a função abaixo
             alert(`Por favor digite somente números entre 1 a 5`)
         } else {
             Verificador = true
             var Soma = 0
+            // Se o primeiro número for um Número Real (sem ponto flutuante) e for igual a 1 ele executa abaixo
             if(parseInt(CursoNaDnc[0]) == 1) {
                     var QuantidadeDeCursosCompradosVerificador = true
                     var Verificador1 = `S`
