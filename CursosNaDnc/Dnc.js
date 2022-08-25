@@ -28,31 +28,41 @@ while (Continuar == `S`) {
             Verificador = true
             var Soma = 0
             // Se o primeiro número for um Número Real (sem ponto flutuante) e for igual a 1 ele executa abaixo
+            // P: O que é "ponto flutuante????",
+            // R: de uma forma simples e resumida usaremos o valor 4.5, o "." depois do 4 e antes do 5 é um valor de ponto flutuante ou seja um valor ponto flutuante é um número não inteiro com decimais
             if(parseInt(CursoNaDnc[0]) == 1) {
                     var QuantidadeDeCursosCompradosVerificador = true
                     var Verificador1 = `S`
                     // Declarando duas variáveis e atribuindo os valores de: true & `S` a elas
                     while (QuantidadeDeCursosCompradosVerificador == true) {
                         while (Verificador1 == `S`) {
+                        // Exibe um prompt perguntando quantos cursos o cliente deseja comprar
                         var QuantidadeDeCursosComprados1 = prompt(`Quantos cursos o senhor deseja comprar sobre Formação Em Dados, cada curso custa: R$20.000,00`)
                         // Se QuantidadeDeCursosComprados1 não for um número ou seu valor for menor ou igual a 0 ele executa a função abaixo
                             if(isNaN(QuantidadeDeCursosComprados1) || QuantidadeDeCursosComprados1 <=0) {
                                 alert(`Por favor digite somente números`)
                             } else {
+                                // Se a função acima não for executada ele executa essa função daqui
                                 Verificador1 = `N`
+                                // Atribui o valor "N" a variável Verificador1
                             }
                         }
                         var SomaTotal1 = parseInt(QuantidadeDeCursosComprados1) * 20000
-                        Soma = Soma + SomaTotal1
+                        // Pega a quantidade de cursos comprados e multiplica pelo seu valor(R$20.000,00)
+                        Soma =+ SomaTotal1
+                        // Pode ser escrito dessa forma: Soma = Soma + SomaTotal1, porem dessa forma: Soma =+ SomaTotal1 temos um código muito mais limpo e bonito
                         QuantidadeDeCursosCompradosVerificador = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados1} cursos sobre Formação Em Dados?. O total foi de: R$${SomaTotal1}`)
                         if(QuantidadeDeCursosCompradosVerificador == false) {
+                            // Se QuantidadeDeCursosCompradosVerificador for falso ele executa o código abaixo
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
                             QuantidadeDeCursosCompradosVerificador = true
                             Verificador1 = `S`
                         } else {
+                            // Se a função acima não for executada ele executa essa daqui
                             QuantidadeDeCursosCompradosVerificador = false
                         }
                     }
+                    // Exibi um alerta informando quantos cursos o cliente comprou e o total que foi gasto nesses cursos
                     alert(`O senhor comprou um total de: ${QuantidadeDeCursosComprados1} cursos sobre Formação Em Dados, e gastou um total de: R$${SomaTotal1}`)
             } else if (parseInt(CursoNaDnc[0]) == 2) {
                 var QuantidadeDeCursosCompradosVerificador2 = true
@@ -67,7 +77,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal2 = parseInt(QuantidadeDeCursosComprados2) * 15000
-                        Soma = Soma + SomaTotal2
+                        Soma =+ SomaTotal2
                         QuantidadeDeCursosCompradosVerificador2 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados2} cursos sobre Formação Em Projetos?. O total foi de: R$${SomaTotal2}`)
                         if(QuantidadeDeCursosCompradosVerificador2 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -91,7 +101,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal3 = parseInt(QuantidadeDeCursosComprados3) * 13000
-                        Soma = Soma + SomaTotal3
+                        Soma =+ SomaTotal3
                         QuantidadeDeCursosCompradosVerificador3 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados3} cursos sobre Formação Em Marketing?. O total foi de: R$${SomaTotal3}`)
                         if(QuantidadeDeCursosCompradosVerificador3 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -115,7 +125,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal4 = parseInt(QuantidadeDeCursosComprados4) * 18000
-                        Soma = Soma + SomaTotal4
+                        Soma =+ SomaTotal4
                         QuantidadeDeCursosCompradosVerificador4 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados4} cursos sobre Formação Em Produto?. O total foi de: R$${SomaTotal4}`)
                         if(QuantidadeDeCursosCompradosVerificador4 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -139,7 +149,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal5 = parseInt(QuantidadeDeCursosComprados5) * 19000
-                        Soma = Soma + SomaTotal5
+                        Soma =+ SomaTotal5
                         QuantidadeDeCursosCompradosVerificador5 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados5} cursos sobre Formação Em Tecnologia?. O total foi de: R$${SomaTotal5}`)
                         if(QuantidadeDeCursosCompradosVerificador5 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -164,7 +174,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal6 = parseInt(QuantidadeDeCursosComprados6) * 20000
-                        Soma = Soma + SomaTotal6
+                        Soma =+ SomaTotal6
                         QuantidadeDeCursosCompradosVerificador6 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados6} cursos sobre Formação Em Dados?. O total foi de: R$${SomaTotal6}`)
                         if(QuantidadeDeCursosCompradosVerificador6 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -188,7 +198,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal7 = parseInt(QuantidadeDeCursosComprados7) * 15000
-                        Soma = Soma + SomaTotal7
+                        Soma =+ SomaTotal7
                         QuantidadeDeCursosCompradosVerificador7 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados7} cursos sobre Formação Em Projetos?. O total foi de: R$${SomaTotal7}`)
                         if(QuantidadeDeCursosCompradosVerificador7 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -212,7 +222,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal8 = parseInt(QuantidadeDeCursosComprados8) * 13000
-                        Soma = Soma + SomaTotal8
+                        Soma =+ SomaTotal8
                         QuantidadeDeCursosCompradosVerificador8 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados8} cursos sobre Formação Em Marketing?. O total foi de: R$${SomaTotal8}`)
                         if(QuantidadeDeCursosCompradosVerificador8 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -236,7 +246,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal9 = parseInt(QuantidadeDeCursosComprados9) * 18000
-                        Soma = Soma + SomaTotal9
+                        Soma =+ SomaTotal9
                         QuantidadeDeCursosCompradosVerificador9 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados9} cursos sobre Formação Em Produto?. O total foi de: R$${SomaTotal9}`)
                         if(QuantidadeDeCursosCompradosVerificador9 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -260,7 +270,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal10 = parseInt(QuantidadeDeCursosComprados10) * 19000
-                        Soma = Soma + SomaTotal10
+                        Soma =+ SomaTotal10
                         QuantidadeDeCursosCompradosVerificador10 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados10} cursos sobre Formação Em Tecnologia?. O total foi de: R$${SomaTotal10}`)
                         if(QuantidadeDeCursosCompradosVerificador10 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -285,7 +295,7 @@ while (Continuar == `S`) {
                         }
                     }
                     var SomaTotal11 = parseInt(QuantidadeDeCursosComprados11) * 20000
-                    Soma = Soma + SomaTotal11
+                    Soma =+ SomaTotal11
                     QuantidadeDeCursosCompradosVerificador11 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados11} cursos sobre Formação Em Dados?. O total foi de: R$${SomaTotal11}`)
                     if(QuantidadeDeCursosCompradosVerificador11 == false) {
                         alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -309,7 +319,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal12 = parseInt(QuantidadeDeCursosComprados12) * 15000
-                        Soma = Soma + SomaTotal12
+                        Soma =+ SomaTotal12
                         QuantidadeDeCursosCompradosVerificador12 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados12} cursos sobre Formação Em Projetos?. O total foi de: R$${SomaTotal12}`)
                         if(QuantidadeDeCursosCompradosVerificador12 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -333,7 +343,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal13 = parseInt(QuantidadeDeCursosComprados13) * 13000
-                        Soma = Soma + SomaTotal13
+                        Soma =+ SomaTotal13
                         QuantidadeDeCursosCompradosVerificador13 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados13} cursos sobre Formação Em Marketing?. O total foi de: R$${SomaTotal13}`)
                         if(QuantidadeDeCursosCompradosVerificador13 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -357,7 +367,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal14 = parseInt(QuantidadeDeCursosComprados14) * 18000
-                        Soma = Soma + SomaTotal14
+                        Soma =+ SomaTotal14
                         QuantidadeDeCursosCompradosVerificador14 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados14} cursos sobre Formação Em Produto?. O total foi de: R$${SomaTotal14}`)
                         if(QuantidadeDeCursosCompradosVerificador14 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -381,7 +391,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal15 = parseInt(QuantidadeDeCursosComprados15) * 19000
-                        Soma = Soma + SomaTotal15
+                        Soma =+ SomaTotal15
                         QuantidadeDeCursosCompradosVerificador15 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados15} cursos sobre Formação Em Tecnologia?. O total foi de: R$${SomaTotal15}`)
                         if(QuantidadeDeCursosCompradosVerificador15 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -406,7 +416,7 @@ while (Continuar == `S`) {
                         }
                     }
                     var SomaTotal16 = parseInt(QuantidadeDeCursosComprados16) * 20000
-                    Soma = Soma + SomaTotal16
+                    Soma =+ SomaTotal16
                     QuantidadeDeCursosCompradosVerificador16 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados16} cursos sobre Formação Em Dados?. O total foi de: R$${SomaTotal16}`)
                     if(QuantidadeDeCursosCompradosVerificador16 == false) {
                         alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -430,7 +440,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal17 = parseInt(QuantidadeDeCursosComprados17) * 15000
-                        Soma = Soma + SomaTotal17
+                        Soma =+ SomaTotal17
                         QuantidadeDeCursosCompradosVerificador17 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados17} cursos sobre Formação Em Projetos?. O total foi de: R$${SomaTotal17}`)
                         if(QuantidadeDeCursosCompradosVerificador17 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -454,7 +464,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal18 = parseInt(QuantidadeDeCursosComprados18) * 13000
-                        Soma = Soma + SomaTotal18
+                        Soma =+ SomaTotal18
                         QuantidadeDeCursosCompradosVerificador18 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados18} cursos sobre Formação Em Marketing?. O total foi de: R$${SomaTotal18}`)
                         if(QuantidadeDeCursosCompradosVerificador18 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -478,7 +488,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal19 = parseInt(QuantidadeDeCursosComprados19) * 18000
-                        Soma = Soma + SomaTotal19
+                        Soma =+ SomaTotal19
                         QuantidadeDeCursosCompradosVerificador19 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados19} cursos sobre Formação Em Produto?. O total foi de: R$${SomaTotal19}`)
                         if(QuantidadeDeCursosCompradosVerificador19 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -502,7 +512,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal20 = parseInt(QuantidadeDeCursosComprados20) * 19000
-                        Soma = Soma + SomaTotal20
+                        Soma =+ SomaTotal20
                         QuantidadeDeCursosCompradosVerificador20 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados20} cursos sobre Formação Em Tecnologia?. O total foi de: R$${SomaTotal20}`)
                         if(QuantidadeDeCursosCompradosVerificador20 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -527,7 +537,7 @@ while (Continuar == `S`) {
                         }
                     }
                     var SomaTotal21 = parseInt(QuantidadeDeCursosComprados21) * 20000
-                    Soma = Soma + SomaTotal21
+                    Soma =+ SomaTotal21
                     QuantidadeDeCursosCompradosVerificador21 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados21} cursos sobre Formação Em Dados?. O total foi de: R$${SomaTotal21}`)
                     if(QuantidadeDeCursosCompradosVerificador21 == false) {
                         alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -551,7 +561,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal22 = parseInt(QuantidadeDeCursosComprados22) * 15000
-                        Soma = Soma + SomaTotal22
+                        Soma =+ SomaTotal22
                         QuantidadeDeCursosCompradosVerificador22 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados22} cursos sobre Formação Em Projetos?. O total foi de: R$${SomaTotal22}`)
                         if(QuantidadeDeCursosCompradosVerificador22 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -575,7 +585,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal23 = parseInt(QuantidadeDeCursosComprados23) * 13000
-                        Soma = Soma + SomaTotal23
+                        Soma =+ SomaTotal23
                         QuantidadeDeCursosCompradosVerificador23 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados23} cursos sobre Formação Em Marketing?. O total foi de: R$${SomaTotal23}`)
                         if(QuantidadeDeCursosCompradosVerificador23 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -599,7 +609,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal24 = parseInt(QuantidadeDeCursosComprados24) * 18000
-                        Soma = Soma + SomaTotal24
+                        Soma =+ SomaTotal24
                         QuantidadeDeCursosCompradosVerificador24 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados24} cursos sobre Formação Em Produto?. O total foi de: R$${SomaTotal24}`)
                         if(QuantidadeDeCursosCompradosVerificador24 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -623,7 +633,7 @@ while (Continuar == `S`) {
                             }
                         }
                         var SomaTotal25 = parseInt(QuantidadeDeCursosComprados25) * 19000
-                        Soma = Soma + SomaTotal25
+                        Soma =+ SomaTotal25
                         QuantidadeDeCursosCompradosVerificador25 = confirm(`O senhor confirma a compra de um total de: ${QuantidadeDeCursosComprados25} cursos sobre Formação Em Tecnologia?. O total foi de: R$${SomaTotal25}`)
                         if(QuantidadeDeCursosCompradosVerificador25 == false) {
                             alert(`Redirecionaremos o senhor para a tela de compra do curso novamente`)
@@ -640,6 +650,7 @@ while (Continuar == `S`) {
                 alert(`Agradecemos o seu feedback`)
                 Continuar = `N`
                 alert(`O senhor gastou um total de: R$${Soma}`)
+                // Exibe um alerta com o total gasto com os cursos
             } else {
                 alert(`Agradecemos o seu feedback`)
             }
