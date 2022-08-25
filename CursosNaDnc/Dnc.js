@@ -24,15 +24,18 @@ while (Continuar == `S`) {
         || CursoNaDnc[4] > 5 || CursoNaDnc[4] < 1) { // se o quinto digito de CursoNaDnc for maior do que 5 ou menor do que 1 ele executa a função abaixo
             alert(`Por favor digite somente números entre 1 a 5`)
         } else {
+            // Caso a função acima não seja executada ele executa essa função aqui independentemente do seu valor
             Verificador = true
             var Soma = 0
             // Se o primeiro número for um Número Real (sem ponto flutuante) e for igual a 1 ele executa abaixo
             if(parseInt(CursoNaDnc[0]) == 1) {
                     var QuantidadeDeCursosCompradosVerificador = true
                     var Verificador1 = `S`
+                    // Declarando duas variáveis e atribuindo os valores de: true & `S` a elas
                     while (QuantidadeDeCursosCompradosVerificador == true) {
                         while (Verificador1 == `S`) {
                         var QuantidadeDeCursosComprados1 = prompt(`Quantos cursos o senhor deseja comprar sobre Formação Em Dados, cada curso custa: R$20.000,00`)
+                        // Se QuantidadeDeCursosComprados1 não for um número ou seu valor for menor ou igual a 0 ele executa a função abaixo
                             if(isNaN(QuantidadeDeCursosComprados1) || QuantidadeDeCursosComprados1 <=0) {
                                 alert(`Por favor digite somente números`)
                             } else {
