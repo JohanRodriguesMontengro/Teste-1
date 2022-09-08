@@ -64,6 +64,7 @@ while (Continuar == `S`) {
                     }
                     // Exibi um alerta informando quantos cursos o cliente comprou e o total que foi gasto nesses cursos
                     alert(`O senhor comprou um total de: ${QuantidadeDeCursosComprados1} cursos sobre Formação Em Dados, e gastou um total de: R$${SomaTotal1}`)
+                // A partir daqui é somente o mesmo código acima somente mudando alguns valores.
             } else if (parseInt(CursoNaDnc[0]) == 2) {
                 var QuantidadeDeCursosCompradosVerificador2 = true
                     var Verificador2 = `S`
